@@ -1,0 +1,35 @@
+.label-required::after {
+  color: #DD4B39;
+  content: " *";
+}
+
+table{
+	font-size:12px;
+}
+
+.dashboard .dialog{
+	display: block;
+	  min-height: 150px;
+	  padding: 15px;
+	  margin-bottom: 20px;
+	  background: #563D7C;
+	  color:#FFF;
+	  opacity: 0.75;
+	  width: 100% !important;
+}
+.dashboard .dialog .title{
+	  color: #FFF;
+	  font-size: 1em;
+	  letter-spacing: 1px;
+	  word-spacing: 0px;
+	  font-weight: lighter;
+}
+.dashboard .dialog hr{
+	margin-top:0px;
+	margin-bottom:0px;
+}
+.dashboard .dialog .value{
+  font-size: 69px;
+  font-weight: bold;
+  text-align: center;
+}

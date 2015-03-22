@@ -1,0 +1,45 @@
+body {
+  counter-reset: my-awesome-counter;
+}
+#list-merchants  tbody tr{
+  counter-increment: my-awesome-counter;
+}
+#list-merchants  tbody tr td.counter:before {
+  content: counter(my-awesome-counter);
+}
+div.ajax-loading-container
+{
+    z-index: 1030;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    text-align:center;
+}
+div.ajax-loading-container .loading-element
+{
+    position: relative;
+    display: inline-block;
+}
+div.ajax-loading-container .loading-element .message
+{
+    border-color: #F0C36D;
+    background-color: #F9EDBE;
+    padding: 0 10px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -moz-box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+#toolbar a{
+	float:left;
+}
+
+#toolbar form{
+	float: left;
+	width: 230px;
+	margin-left: 10px;
+}
