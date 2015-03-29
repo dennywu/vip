@@ -27,6 +27,8 @@
 
     <link rel="stylesheet" href="css/res-menu.css"/>
     <link rel="stylesheet" href="css/responsive.css"/>
+	<link rel="stylesheet" href="css/bootstrap-extend.css"/>
+	<link rel="stylesheet" href="assets/pace/themes/orange/pace-theme-minimal.css"/>
     <!--[if lte IE 8]>
         <script type="text/javascript" src="../js/html5.js"></script>
     <![endif]-->
@@ -41,6 +43,7 @@
 	<script type="text/javascript" src="js/modernizr.custom.js"></script>
 	<script type="text/javascript" src="js/classie.js"></script>
 	<script type="text/javascript" src="js/mlpushmenu.js"></script>
+	<script type="text/javascript" src="assets/pace/pace.min.js"></script>
 
 	<script type="text/javascript" src="js/script.js"></script>
 	<script type="text/javascript" src="js/home.js"></script>
@@ -66,13 +69,22 @@
                         <div id="sys_head_slide" class="head-slide flexslider">
                             <ul class="slides">
                                 <li>
-                                    <img src="images/ex/01_banner.jpg" alt="synu fitness 50%"/>
+                                    <img src="images/ex/slides/01_banner.jpg" alt=""/>
                                 </li>
                                 <li>
-                                    <img src="images/ex/02_banner.jpg" alt="fruit and vegetable shop"/>
+                                    <img src="images/ex/slides/02_banner.jpg" alt=""/>
                                 </li>
                                 <li>
-                                    <img src="images/ex/03_banner.jpg" alt="summer camp"/>
+                                    <img src="images/ex/slides/03_banner.jpg" alt=""/>
+                                </li>
+								<li>
+                                    <img src="images/ex/slides/04_banner.jpg" alt=""/>
+                                </li>
+								<li>
+                                    <img src="images/ex/slides/05_banner.jpg" alt=""/>
+                                </li>
+								<li>
+                                    <img src="images/ex/slides/06_banner.jpg" alt=""/>
                                 </li>
                             </ul>
                         </div>
@@ -125,9 +137,11 @@
                             <a href="category.php" class="link-right">See all <i class="pick-right"></i></a>
                         </h3>
                     </div>
-                    <div class="block-content list-coupon clearfix" id='list-merchants'>
-                        
-                    </div>
+					<div class='row'>
+						<div class="block-content list-coupon col-xs-12" id='list-merchants'>
+							
+						</div>
+					</div>
 					<div id='paging-marchant'>
 					
 					</div>

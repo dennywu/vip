@@ -11,7 +11,7 @@
 					</h1>
 					<nav class="main-nav">
 						<ul id="main-menu" class="nav nav-horizontal clearfix">
-							<li class="active">
+							<li class="">
 								<a href="index.php">Home</a>
 							</li>
 							<li class="has-sub">

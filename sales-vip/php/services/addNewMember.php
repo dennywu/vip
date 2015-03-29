@@ -12,8 +12,10 @@
 	$note = $_POST["note"];
 	$gender = $_POST["gender"];
 	
-	if($no_card == "" || $name == "" || $address == "" || $email == "" || $birthday == "" || $job == "" || $religion == "" || $gender == "")
-		echo "<p>Silahkan lengkapi data yang kosong</p>";
+	if($no_card == "" || $name == "" || $address == "" || $email == "" || $birthday == "" || $job == "" || $religion == "" || $gender == ""){
+		$errorMsg = "<p>Silahkan lengkapi data yang kosong</p>";
+		exit;
+	}
 	
 	$qryCheckNoCardAlreadyExist = "SELECT count(*) as total from members WHERE nocard = '$no_card'";
 	$resultExist = mysql_query($qryCheckNoCardAlreadyExist) or die('Gagal Menambah Member. Pesan kesalahan:<br><br>'.mysql_error());
@@ -22,7 +24,8 @@
 		$total = $row['total'];
 	}
 	if($total > 0){
-		echo "No Kartu ini sudah terdaftar";
+		$errorMsg = "No Kartu ini sudah terdaftar";
+		exit;
 	}
 	
 	session_start();

@@ -14,21 +14,22 @@ $(function(){
 				var elListMerchants = $("#list-merchants");
 				for(var i = 0; i< result.length; i++)
 				{			
-					var html = "<div class='coupon-item grid_3'>"+
-								"<div class='coupon-content'>"+
-									"<div class='img-thumb-center'>"+
-										"<div class='wrap-img-thumb'>"+
-										   "<span class='ver_hold'></span>"+
-											"<a href='detail.php?id="+ result[i].id +"' class='ver_container'><img src='"+ result[i].path +"' alt='$COUPON_TITLE'></a>"+
+					var html = "<div class='coupon-item col-xs-4 col-sm-3 col-md-3 col-lg-3' title='"+ result[i].name +"'>"+
+									"<div class='coupon-content'>"+
+										"<div class='img-thumb-center'>"+
+											"<div class='wrap-img-thumb'>"+
+											   "<span class='ver_hold'></span>"+
+												"<a href='detail.php?id="+ result[i].id +"' class='ver_container'><img src='"+ result[i].path +"' alt=''></a>"+
+											"</div>"+
 										"</div>"+
+										"<div class='coupon-price hidden-xs'>"+ result[i].discount +" %</div>"+
+										"<div class='coupon-brand hidden-xs'>"+ result[i].name +"</div>"+
+										"<div class='coupon-brand visible-xs' style='font-size:0.9em;'>"+ result[i].name +"</div>"+
+										"<div class='coupon-desc hidden-xs'>"+ result[i].short_desc +"</div>"+
+										"<div class='time-left hidden-xs'></div>"+
+										"<a class='btn btn-blue btn-take-coupon hidden-xs' href='detail.php?id="+ result[i].id +"'>View Detail</a>"+
 									"</div>"+
-									"<div class='coupon-price'>"+ result[i].discount +" %</div>"+
-									"<div class='coupon-brand'>"+ result[i].name +"</div>"+
-									"<div class='coupon-desc'>"+ result[i].short_desc +"</div>"+
-									"<div class='time-left'></div>"+
-									"<a class='btn btn-blue btn-take-coupon' href='detail.php?id="+ result[i].id +"'>View Detail</a>"+
-								"</div>"+
-							"</div>";
+								"</div>";
 					elListMerchants.append(html);
 				}
 				
@@ -94,5 +95,22 @@ $(function(){
 		currentPage = 0;
 		showMerchants(paramAjax.keyword, paramAjax.cateId);
     });
+	
+    $('ul.slides').shuffle();
 });
 
+(function($){
+
+    $.fn.shuffle = function() {
+        return this.each(function(){
+            var items = $(this).children().clone(true);
+            return (items.length) ? $(this).html($.shuffle(items)) : this;
+        });
+    }
+    
+    $.shuffle = function(arr) {
+        for(var j, x, i = arr.length; i; j = parseInt(Math.random() * i), x = arr[--i], arr[i] = arr[j], arr[j] = x);
+        return arr;
+    }
+    
+})(jQuery);

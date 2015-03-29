@@ -20,6 +20,9 @@
 			exit;
 		}
 	}
+	else{
+		$colaborator = "";
+	}
 	
 	$qryCheckUsernameAlreadyExist = "SELECT count(*) as total from usersales WHERE username = '$username'";
 	$resultExist = mysql_query($qryCheckUsernameAlreadyExist) or die('Gagal Menambah User. Pesan kesalahan:<br><br>'.mysql_error());
