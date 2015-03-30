@@ -5,7 +5,10 @@
 	$name = $_POST["name"];
 	$address = $_POST["address"];
 	$email = $_POST["email"];
-	$birthday = date('Y-m-d', strtotime($_POST['birthday']));
+	$dob1=trim($_POST['birthday']);//$dob1='dd/mm/yyyy' format
+	list($d, $m, $y) = explode('/', $dob1);
+	$mk=mktime(0, 0, 0, $m, $d, $y);
+	$birthday=strftime('%Y-%m-%d',$mk);
 	$job = $_POST["job"];
 	$religion = $_POST["religion"];
 	$hobby = $_POST["hobby"];
