@@ -33,7 +33,7 @@ var getMerchantsByKeyword = function(keyword){
 				var html = "<tr>"+
 								"<td class='counter'></td>"+
 								"<td>"+ result[i].name +"</td>"+
-								"<td>"+ result[i].discount +"%</td>"+
+								"<td>"+ result[i].discount +"</td>"+
 								"<td>"+ result[i].categoryName +"</td>"+
 								//"<td>"+ result[i].short_desc +"</td>"+
 								"<td><a href='editMerchant.php?id="+ result[i].id +"' class='btn'>Update</a></td>"+
@@ -60,7 +60,7 @@ var getMerchants = function(offset){
 				var html = "<tr>"+
 								"<td class='counter'></td>"+
 								"<td>"+ result[i].name +"</td>"+
-								"<td>"+ result[i].discount +"%</td>"+
+								"<td>"+ result[i].discount +"</td>"+
 								"<td>"+ result[i].categoryName +"</td>"+
 								//"<td>"+ result[i].short_desc +"</td>"+
 								"<td><a href='editMerchant.php?id="+ result[i].id +"' class='btn'>Update</a></td>"+

@@ -42,7 +42,7 @@
 	                        </div>
 	                        <div class="form-group">
 	                        	<label class="" for="contact-subject">Discount</label>
-	                        	<input type="number" id='merchant-discount' name="discount" min="1" max="100" placeholder="Discount..." class="contact-subject form-control" required>
+	                        	<input type="text" id='merchant-discount' name="discount" min="1" max="100" placeholder="Discount..." class="contact-subject form-control" required>
 	                        </div>
 	                        <div class="form-group">
 	                        	<label class="" for="contact-message">Short Description</label>

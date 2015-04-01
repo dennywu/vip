@@ -30,12 +30,8 @@ var postUpdateMerchant = function(ev){
 	var name = $("#merchant-name").val();
 	var category = $("#list-category").val();
 	var discount = $("#merchant-discount").val();
-	if(name == "" || category == ""){
+	if(name == "" || category == "" || discount == ""){
 		alert("Semua Field harus diisi");
-		return;
-	}
-	if(!($.isNumeric(discount)) || discount == ""){
-		alert("Discount Harus Numeric");
 		return;
 	}
 	tinymce.triggerSave();

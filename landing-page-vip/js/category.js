@@ -67,7 +67,7 @@ var showMerchants = function(keyword, cateId){
                                         "<p class='rs coupon-desc'>"+ result[i].short_desc +"</p>"+
                                         "<div class='bottom-action'>"+
                                             "<div class='left-vote'>"+
-                                                "<span class='lbl-work'>Discount : "+ result[i].discount +"%</span>"+
+                                                "<span class='lbl-work'>Discount : "+ result[i].discount +"</span>"+
                                             "</div>"+
                                             "<a class='btn btn-blue btn-view-coupon' href='detail.php?id="+ result[i].id +"'>VIEW <span>DETAIL</span></a>"+
                                         "</div>"+

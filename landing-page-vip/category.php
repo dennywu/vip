@@ -137,7 +137,7 @@
 															<p class='rs coupon-desc'>". $merchants[$i]['short_desc'] ."</p>
 															<div class='bottom-action'>
 																<div class='left-vote'>
-																	<span class='lbl-work'>Discount : ". $merchants[$i]['discount'] ."%</span>
+																	<span class='lbl-work'>Discount : ". $merchants[$i]['discount'] ."</span>
 																</div>
 																<a class='btn btn-blue btn-view-coupon' href='detail.php?id=".$merchants[$i]['id']."'>VIEW <span>DETAIL</span></a>
 															</div>

@@ -9,10 +9,10 @@
 	$shortDesc = $data['shortDesc'];
 	$desc = $data['desc'];
 	
-	if($discount < 1 || $discount > 100){
-		echo json_encode(array('error' => true, 'message' => 'Nilai discount tidak boleh lebih kecil dari 1 dan tidak boleh besar dari 100'));
-		return;
-	}
+	// if($discount < 1 || $discount > 100){
+		// echo json_encode(array('error' => true, 'message' => 'Nilai discount tidak boleh lebih kecil dari 1 dan tidak boleh besar dari 100'));
+		// return;
+	// }
 	
 	
 	$qryCheckNameAlreadyExist = "SELECT count(*) as total from merchants WHERE name = '$name'";
@@ -26,7 +26,7 @@
 		return;
 	}
 	
-	$qry = "insert into merchants (name,category_id,discount, short_desc, description, lastupdated, path) values('$name',$category,$discount,'$shortDesc','$desc', NOW(), '$filename')";
+	$qry = "insert into merchants (name,category_id,discount, short_desc, description, lastupdated, path) values('$name',$category,'$discount','$shortDesc','$desc', NOW(), '$filename')";
 	
 	$result = mysql_query($qry);
     echo json_encode(array('error'=>false));

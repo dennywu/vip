@@ -10,10 +10,10 @@
 	$shortDesc = $data['shortDesc'];
 	$desc = $data['desc'];
 	
-	if($discount < 1 || $discount > 100){
-		echo json_encode(array('error' => true, 'message' => 'Nilai discount tidak boleh lebih kecil dari 1 dan tidak boleh besar dari 100'));
-		return;
-	}
+	// if($discount < 1 || $discount > 100){
+		// echo json_encode(array('error' => true, 'message' => 'Nilai discount tidak boleh lebih kecil dari 1 dan tidak boleh besar dari 100'));
+		// return;
+	// }
 	
 	$qryGetMerchant = "SELECT * from merchants WHERE id = $id";
 	$resultExistMerchant = mysql_query($qryGetMerchant);
@@ -36,9 +36,9 @@
 	}
 	
 	if($data['filename'] != ""){
-		$qry = "UPDATE merchants set name = '$name', category_id=$category, discount=$discount, short_desc='$shortDesc', description='$desc', lastupdated=NOW(), path='$filename' WHERE id = $id";
+		$qry = "UPDATE merchants set name = '$name', category_id=$category, discount='$discount', short_desc='$shortDesc', description='$desc', lastupdated=NOW(), path='$filename' WHERE id = $id";
 	}else{
-		$qry = "UPDATE merchants set name = '$name', category_id=$category, discount=$discount, short_desc='$shortDesc', description='$desc', lastupdated=NOW() WHERE id = $id";
+		$qry = "UPDATE merchants set name = '$name', category_id=$category, discount='$discount', short_desc='$shortDesc', description='$desc', lastupdated=NOW() WHERE id = $id";
 	}
 	
 	$result = mysql_query($qry);

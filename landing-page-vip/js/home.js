@@ -22,7 +22,7 @@ $(function(){
 												"<a href='detail.php?id="+ result[i].id +"' class='ver_container'><img src='"+ result[i].path +"' alt=''></a>"+
 											"</div>"+
 										"</div>"+
-										"<div class='coupon-price hidden-xs'>"+ result[i].discount +" %</div>"+
+										"<div class='coupon-price hidden-xs'>"+ result[i].discount +"</div>"+
 										"<div class='coupon-brand hidden-xs'>"+ result[i].name +"</div>"+
 										"<div class='coupon-brand visible-xs' style='font-size:0.9em;'>"+ result[i].name +"</div>"+
 										"<div class='coupon-desc hidden-xs'>"+ result[i].short_desc +"</div>"+

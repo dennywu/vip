@@ -94,7 +94,7 @@
                         </div>
                     </div>
                     <div class="grid_7">
-                        <div class="save-price">Save <?php echo $merchant['discount'] ?>% Off</div>
+                        <div class="save-price">Save <?php echo $merchant['discount'] ?></div>
                         <a href="#" class="brand-name"><?php echo $merchant['name'] ?></a>
                         <div class="coupon-desc"><?php echo $merchant['description'] ?></div>
                         <div class="wrap-btn clearfix">
