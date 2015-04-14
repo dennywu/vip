@@ -2,6 +2,9 @@
 Please consider that the JS part isn't production ready at all, I just code it to show the concept of merging filters and titles together !
 */
 $(document).ready(function(){
+	intializeFilterSalesmanControl();
+	$("#filterBySalesman").change(filterBySalesman);
+
     $('.filterable .btn-filter').click(function(){
         var $panel = $(this).parents('.filterable'),
         $filters = $panel.find('.filters input'),
@@ -43,3 +46,58 @@ $(document).ready(function(){
         }
     });
 });
+
+var intializeFilterSalesmanControl = function(){
+	$.ajax({
+		type:"GET",
+		url:"php/presentation/getSalesmans.php",
+		dataType:"JSON",
+		success:function(result){
+			$("#filterBySalesman").append("<option value='none'>None</option>");
+			result.forEach(function(salesman){
+				$("#filterBySalesman").append("<option value='"+ salesman.username +"'>"+salesman.fullname+"</option>");
+			});
+		}
+	});
+};
+
+var filterBySalesman = function(){
+	var salesman = $("#filterBySalesman").val();
+	if(salesman == "none"){
+		window.location.reload();
+	}else{
+		$.ajax({
+			type:"GET",
+			url:"php/presentation/getMembersByFilter.php",
+			dataType:"JSON",
+			data:{
+				'salesman':salesman
+			},
+			success:function(result){
+				$("#tbl-members tbody").empty();
+				if(result.length == 0){
+					$("#tbl-members tbody").append("<tr>\
+							<td colspan='11' style='text-align:center;'>Tidak ada member yang ditemukan</td>\
+						</tr>");
+				}
+				else{
+					result.forEach(function(member){
+						$("#tbl-members tbody").append("<tr>\
+							<td>"+ member.username + "</td>\
+								<td>"+ member.registerdate + "</td>\
+								<td>"+ member.nocard +"</td>\
+								<td>"+ member.name +"</td>\
+								<td>"+ member.address +"</td>\
+								<td>"+ member.email +"</td>\
+								<td>"+ member.birthday +"</td>\
+								<td>"+ member.job +"</td>\
+								<td>"+ member.religion +"</td>\
+								<td>"+ member.gender +"</td>\
+								<td>"+ member.hobby +"</td>\
+						</tr>");
+					});
+				}
+			}
+		});
+	}
+};

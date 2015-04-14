@@ -73,17 +73,12 @@
 				<div class="grid_12">
 					<br/>
 					<div class="save-price">VIP Card Indonesia</div>
-		<p>VIP Card Indonesia merupakan perusahaan Card System terbaik yang menyediakan fasilitas berupa Media Promosi, Membership Co-Branding dan Penyedia Diskon terbesar di Kota Batam. VIP Card Indonesia berkomitmen tinggi untuk memberikan pelayanan yang terbaik bagi Member dan Merchant serta semua Perusahaan dan Lembaga yang bekerjasama dengan kami. Adapun Visi dan Misi kami adalah sebagai berikut :</p>
+		<p>VIP Card Indonesia merupakan penyedia fasilitas-fasilitas menarik seperti diskon-diskon di jaringan merchant VIP CARD seperti restoran, cafe, tempat hiburan, salon, dan masih banyak lagi. Bagi anggota VIP CARD, kami menyediakan info terbaik atas setiap promosi produk merchant beserta diskon-diskon terbaik, sehingga anggota VIP CARD akan selalu mendapatkan harga terbaik saat berbelanja.</p>
 
-		<p><b>VISI</b></p>
+		<p> Bagi merchant VIP CARD, kami memberikan solusi terbaik untuk mempromosikan produk serta paket promosi lainnya, melalui website, sms blast, email blast, katalog, sosial media, sistem aplikasi, serta fasilitas jitu lainnya guna meningkatkan brand awarenest akan produk merchant.</p>
 
-		<p>Menjadi Discount Card Provider terbaik berstandar Internasional</p>
-
-		<p><b>MISI</b></p>
-
-		<p>Menyediakan Discount Card dan Media Informasi berskala Internasional yang menjamin kepuasan dan memberikan kebanggaan bagi Card Holders, Merchant dan Co-Branding Partner.</p>
-
-		<p>Di dunia yang semakin beragam ini, tentunya permintaan promosi bagi perusahaan semakin beragam juga. VIP Card hadir menawarkan solusi pemasaran dan promosi yang cerdik agar semakin diterima oleh masyarakat. Untuk itu VIP Card merupakan Media Promosi terbaik guna meningkatkan Brand serta memasarkan Produk. VIP Card menyediakan beragam Media seperti Katalog, Website, Facebook, Twitter, Email Blasting, Sms Blasting serta fasilitas jitu lainnya guna meningkatkan Awareness produk anda.</p>
+		<p>VIP CARD Indonesia berkomitmen menjadi mitra bagi member maupun merchant untuk mencapai value yang lebih baik.</p>
+		<p>VIP CARD..... Easy Is Awesome.</p>
 					</div>
 				</div>
 			</div>

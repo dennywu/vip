@@ -1,4 +1,5 @@
 <?php 
+	ob_start();
     session_start();
 	if($_SESSION["username"] == null || $_SESSION["username"] == "")
 	{
@@ -14,11 +15,13 @@
 		<link rel="shortcut icon" href="images/fav.ico" type="image/x-icon" />
 		<link rel="stylesheet" href="assets/bootstrap-3.3.4-dist/css/bootstrap.min.css"/>
 		<link rel="stylesheet" href="css/style.css"/>
+		<link rel="stylesheet" href="assets/pace/themes/orange/pace-theme-minimal.css"/>
 		
 		<script src="assets/jquery-2.1.3.min.js"></script>
 		<script src="assets/bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
 		<script src="assets/jquery.table2excel.min.js"></script>
 		<script src="js/member.js"></script>
+		<script type="text/javascript" src="assets/pace/pace.min.js"></script>
 		<script>
 			$(function(){
 				$("button#btn-export").click(function(){
@@ -48,6 +51,11 @@
                     <button class="btn btn-success btn-sm btn-filter">
 						<span class="glyphicon glyphicon-filter"></span> Filter
 					</button>
+					<span>
+						Filter by Salesman :
+						<select class="input-sm" id="filterBySalesman">
+						</select>
+					</span>
 				</div>
 			</div>
 				<?php require_once('php/shared/mysql.class.php'); ?>

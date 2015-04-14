@@ -77,8 +77,8 @@
 					<br/>
 					CV Mitra Batam Sejahtera
 					<br/>
-					Town House Puri Loka Blok A no 21 <br />
-                    Sei Panas, Batam, Indonesia 21432 <br />
+					Harbourbay Mall Superblok FF No 10 <br />
+                    Batam, Indonesia 21432 <br />
 					<br/>
 					Telp : (62) 813 7232 8258
 					<br/>
