@@ -1,5 +1,6 @@
 
 $(function(){
+	var paginationRandSeed = Math.floor((Math.random() * 10) +1);
 	var showMerchants = function(keyword, cateId){
 		$.ajax({
 			type:'GET',
@@ -8,7 +9,8 @@ $(function(){
 			data:{
 				keyword: keyword,
 				cateId: cateId,
-				offset: currentPage
+				offset: currentPage,
+				paginationRandSeed: paginationRandSeed
 			},
 			success:function(result){
 				var elListMerchants = $("#list-merchants");

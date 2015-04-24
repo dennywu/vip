@@ -86,6 +86,12 @@
 								<li>
                                     <img src="images/ex/slides/06_banner.jpg" alt=""/>
                                 </li>
+								<li>
+                                    <img src="images/ex/slides/07_banner.jpg" alt=""/>
+                                </li>
+								<li>
+                                    <img src="images/ex/slides/08_banner.jpg" alt=""/>
+                                </li>
                             </ul>
                         </div>
                     </div>

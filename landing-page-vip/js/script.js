@@ -60,7 +60,7 @@ $(function () {
         if($("#sys_head_slide").length> 0) {
             $("#sys_head_slide").flexslider({
                 animation: "slide",
-                slideshow: false,
+                slideshow: true,
                 start: function (slider) {
                     $(slider).siblings("p").remove();
                     $("#sys_btn_prev_slide").on("click",function(){

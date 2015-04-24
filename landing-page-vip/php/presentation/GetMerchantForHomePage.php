@@ -4,7 +4,8 @@
 	$keyword = $_GET["keyword"];
 	$cateId = $_GET["cateId"];
 	$offset = $_GET["offset"] * 8;
-	$sql = "SELECT m.id,m.name,m.discount,m.short_desc,m.path FROM merchants m LIMIT 8 offset $offset";
+	$paginationRandSeed = $_GET['paginationRandSeed']? ( (int) $_GET['paginationRandSeed'] ): rand();
+	$sql = "SELECT m.id,m.name,m.discount,m.short_desc,m.path FROM merchants m ORDER BY RAND(". $paginationRandSeed .") LIMIT 8 offset $offset";
 	
 	if($keyword != ""){
 		$sql = "SELECT m.id,m.name,m.discount,m.short_desc,m.path FROM merchants m where m.name like '%$keyword%' LIMIT 8 offset $offset";

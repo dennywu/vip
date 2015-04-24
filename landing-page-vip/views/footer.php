@@ -15,15 +15,19 @@
                                     <ul class="rs">
                                         <li>
                                             <i class="fa fa-facebook-square fa-2x"></i>
-                                            <a href="#" target="_blank">Our Facebook page</a>
+                                            <a href="https://www.facebook.com/pages/VIP-Card-Member/1414323952218599?fref=ts" target="_blank">Our Facebook page</a>
                                         </li>
                                         <li>
                                             <i class="fa fa-twitter-square fa-2x"></i>
-                                            <a href="#" target="_blank">Follow our Tweets</a>
+                                            <a href="https://twitter.com/card_vip" target="_blank">Follow our Tweets</a>
                                         </li>
-                                        <li>
+                                        <!--<li>
                                             <i class="fa fa-pinterest-square fa-2x"></i>
                                             <a href="#" target="_blank">Follow our Pin board</a>
+                                        </li>-->
+                                        <li>
+                                            <i class="fa fa-camera-retro fa-2x"></i>
+                                            <a href="https://instagram.com/vip_membercard" target="_blank">Follow our Instagram</a>
                                         </li>
                                     </ul>
                                 </div>
